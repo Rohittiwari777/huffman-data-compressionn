@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    VANTA.HALO({
+        el: "#wrapper",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        baseColor: 0x8919a0,
+        backgroundColor: 0x000000,
+        amplitudeFactor: 2.0,
+        xOffset: 0.01,
+        yOffset: 0.01,
+        size: 4
+    })
+});
+</script>
+        </script>
+        <title>File Compressor</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: 'Oswald', sans-serif;
+            }
+            #wrapper {
+                min-height: 100%;
+            }
+            .heading{
+                font-family: 'Kalam', cursive;
+            }
+            .bton{
+                font-weight:600;
+                font-size: 16px;
+                background: white;
+                color: black;
+                border:transparent;
+                padding: 8px 25px;
+                transition: transform 0.5s;
+
+            }
+            .bton:hover{
+                font-weight:600;
+                cursor:pointer;
+                background:transparent;
+                color:white;
+                text-decoration:none;
+                transform: translateY(-8px);
+            }
+        </style>
+        <!--[if lte IE 6]>
+        <style type="text/css">
+            #container {
+                height: 100%;
+            }
+        </style>
+        <![endif]-->
+    </head>
+
+    <body style="background-color: black; align-items: center; margin-top:-30px;">
+        <div style="color: white; text-align:center;" id="wrapper">
+            <h1 style="font-size: 44px; font-weight:700; padding-top: 120px;">FILE COMPRESSION</h1>
+            <p class="heading" style="margin-top:-10px;" >using</p>
+            <h1 style="color:#8919a0; font-weight:700; font-size: 64px; margin-top:-10px;"><i>HUFFMAN CODING</i></h1>
+            <h1 style="color:#8919a0; font-weight:700; font-size: 64px; margin-top:-10px;"><i>LZ77</i></h1>
+            <a href="compress.html"><button class="bton" >COMPRESS</button></a>
+            <a href="decompress.html"><button class="bton">DECOMPRESS</button></a>
+        </div>
+    </body>
+</html>
